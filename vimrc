@@ -1,5 +1,16 @@
 " By Li Gewei
 
+" 部分colorscheme和set cursorline有冲突，所以先disable
+set background=dark
+"colorscheme desert
+colorscheme solarized
+colorscheme monokai
+" 高亮显示当前行/列
+set cursorline
+"set cursorcolumn
+"hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=NONE guifg=NONE
+"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 
@@ -28,12 +39,6 @@ set ruler
 set ignorecase
 set hlsearch
 set incsearch
-
-" 高亮显示当前行/列
-"set cursorline
-"set cursorcolumn
-"hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 
 set enc=utf-8
@@ -140,10 +145,6 @@ let g:Powerline_symbols = 'fancy'
 set encoding=utf8
 "}
 
-set background=dark
-colorscheme desert
-"colorscheme solarized
-"colorscheme molokai
 
 " vim-indent-guides 配置
 " 随 vim 自启动
