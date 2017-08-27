@@ -1,0 +1,75 @@
+set background=dark
+colorscheme desert
+
+" 定义快捷键的前缀，即<Leader>
+let mapleader=";"
+
+set nocompatible
+set shortmess=atI
+
+set confirm
+set history=1024
+set nobackup
+set noswapfile
+
+set autoindent
+set cindent
+set smarttab
+set smartindent
+
+" 把tab扩展成空格
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set number
+set ruler
+
+set ignorecase
+set hlsearch
+set incsearch
+
+
+set enc=utf-8
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936,big5
+
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%Y/%m/%d\ -\ %H:%M\")}
+set laststatus=2
+set cmdheight=2
+
+filetype plugin on
+filetype indent on
+" 开启语法高亮功能
+syntax enable
+" 允许用指定语法高亮配色方案替换默认方案
+syntax on
+
+set iskeyword+=_,$,@,%,#,-
+set linespace=0
+set wildmenu
+set backspace=2
+set whichwrap+=<,>,h,l
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
+set report=0
+set fillchars=vert:\ ,stl:\ ,stlnc:\
+set showmatch
+set matchtime=5
+set scrolloff=3
+
+inoremap <C-h> <left>
+inoremap <C-l> <right>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap ' ''<left>
+inoremap " ""<left>
+imap <> <><left>
+
+imap jj <esc>
+
